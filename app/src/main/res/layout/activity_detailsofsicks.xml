@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ofwhite"
+    tools:context=".detailsofsicks">
+
+    <EditText
+        android:id="@+id/namedetailssick"
+        android:layout_width="218dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/iddetailssick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/iddetailssick"
+        android:layout_width="217dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/datedetailssick"
+        app:layout_constraintStart_toStartOf="@+id/namedetailssick"
+        app:layout_constraintTop_toBottomOf="@+id/namedetailssick" />
+
+    <EditText
+        android:id="@+id/datedetailssick"
+        android:layout_width="221dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="DATE"
+        android:inputType="date"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/personaldetails"
+        app:layout_constraintStart_toStartOf="@+id/iddetailssick"
+        app:layout_constraintTop_toBottomOf="@+id/iddetailssick" />
+
+    <EditText
+        android:id="@+id/personaldetails"
+        android:layout_width="209dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="49dp"
+        android:ems="10"
+        android:hint="personal"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/adwya_perdetails"
+        app:layout_constraintStart_toStartOf="@+id/datedetailssick"
+        app:layout_constraintTop_toBottomOf="@+id/datedetailssick" />
+
+    <EditText
+        android:id="@+id/adwya_perdetails"
+        android:layout_width="212dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:hint="adwiya hassas laha"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/savebtn"
+        app:layout_constraintStart_toStartOf="@+id/personaldetails"
+        app:layout_constraintTop_toBottomOf="@+id/personaldetails" />
+
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_width="190dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="save"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/adwya_perdetails"
+        app:layout_constraintTop_toBottomOf="@+id/adwya_perdetails" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="172dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="56dp"
+        android:text="ITS DANGEROUS"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/savebtn"
+        app:layout_constraintTop_toBottomOf="@+id/savebtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

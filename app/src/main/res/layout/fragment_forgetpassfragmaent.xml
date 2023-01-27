@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forgetpassfragmaent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/btnforgotpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="72dp"
+            android:src="@drawable/email"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/emailforgotpass"
+            android:layout_width="236dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="150dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/btnforgotpass"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="272dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="77dp"
+            android:layout_marginBottom="172dp"
+            android:text="please write your email"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/emailforgotpass"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.625"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

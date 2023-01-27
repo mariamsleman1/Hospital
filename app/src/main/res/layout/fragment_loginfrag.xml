@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginfrag">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ofwhite">
+
+        <EditText
+            android:id="@+id/Emaillogin"
+            android:layout_width="239dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="188dp"
+            android:ems="10"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="@+id/passlogin"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/passlogin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/passlogin"
+            android:layout_width="242dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginBottom="51dp"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="numberPassword"
+            app:layout_constraintBottom_toTopOf="@+id/forgotpass"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="106dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginBottom="68dp"
+            android:backgroundTint="@color/purple_200"
+            android:text="login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forgotpass"
+            app:layout_constraintVertical_bias="0.887" />
+
+        <Button
+            android:id="@+id/signupbtn_login"
+            android:layout_width="114dp"
+            android:layout_height="52dp"
+            android:layout_marginEnd="84dp"
+            android:layout_marginBottom="68dp"
+            android:backgroundTint="@color/purple_200"
+            android:text="signup"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/forgotpass"
+            android:layout_width="186dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="472dp"
+            android:layout_marginEnd="124dp"
+            android:layout_marginBottom="87dp"
+            android:text="forgot password"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/loginbtn"
+            app:layout_constraintEnd_toEndOf="@+id/passlogin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
